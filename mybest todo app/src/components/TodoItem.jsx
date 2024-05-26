@@ -1,4 +1,4 @@
-// src/TodoItem.js
+
 
 import React, { useContext, useCallback } from 'react';
 import { TodoContext } from '../context/TodoContext';
@@ -17,13 +17,15 @@ const TodoItem = ({ index, todo }) => {
   return (
     <li className="flex items-center justify-between p-4 border-b last:border-none bg-white hover:bg-gray-100 transition duration-150">
       <span 
-        onClick={handleToggle} 
+        onClick={handleToggle}
+                  // TODO: Implement transition
         className={`flex-grow cursor-pointer ${false ? "line-through" : ""}`}
       >
         {todo.text}
       </span>
       <button 
         onClick={handleRemove} 
+                // TODO: Implement remove
         className="text-red-500 ml-2"
       >
         <svg
