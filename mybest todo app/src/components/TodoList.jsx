@@ -1,5 +1,3 @@
-// src/TodoList.js
-
 import React, { useContext, useMemo } from 'react';
 import { TodoContext } from '../context/TodoContext';
 import TodoItem from './TodoItem';
