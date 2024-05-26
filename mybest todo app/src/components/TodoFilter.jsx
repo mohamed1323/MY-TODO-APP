@@ -1,5 +1,3 @@
-// src/TodoFilter.js
-
 import React, { useContext, useCallback } from 'react';
 import { TodoContext } from '../context/TodoContext';
 
@@ -14,6 +12,7 @@ const TodoFilter = () => {
     <div className="flex justify-center space-x-4 p-4 bg-gray-50 shadow-md rounded-lg">
       <button 
         onClick={() => handleFilterChange('All')} 
+                  // TODO: Implement Filter
         className={`px-4 py-2 rounded-lg font-semibold transition duration-150  ${true ? 'bg-blue-500 text-white' : 'bg-white text-blue-500 hover:bg-blue-100'
       }`}
     >
@@ -22,6 +21,7 @@ const TodoFilter = () => {
       </button>
       <button 
         onClick={() => handleFilterChange('Active')} 
+                  // TODO: implement filter
         className={`px-4 py-2 rounded-lg font-semibold transition duration-150  ${ false ? 'bg-blue-500 text-white' : 'bg-white text-blue-500 hover:bg-blue-100'
       }`}
       >
